@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section__one {
+  background-color: antiquewhite;
+}
+.section__two {
+  background-color: red;
+}
+.section__three {
+  background-color: yellow;
+}
+.section__four {
+  background-color: greenyellow;
+}

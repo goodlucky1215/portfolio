@@ -1,0 +1,16 @@
+png로 변경
+https://svgtopng.com/
+
+그림 색상지정 (구글에 color picker 검색)
+https://www.google.com/search?q=color+picker&oq=color+&aqs=chrome.2.69i57j0i433l3j0l3j69i61.2847j0j7&sourceid=chrome&ie=UTF-8
+
+awesome
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+구글폰트
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+BEM?
+Block Element Modifier
+
