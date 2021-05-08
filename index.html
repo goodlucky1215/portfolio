@@ -10,25 +10,211 @@
   <script src="main.js" defer></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+  <script type="text/typescript" defer src="main.js"></script>
   <title>Jihye's Portfolio</title>
 </head>
 <body>
   <div class="main">
-    <header class="menu_bar">
-      상단메뉴바
+    <header class="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Jihye</a>
+      </div>
+      <div class="nav__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My Work</li>
+          <li class="navbar__menu__item">About</li>
+        </ul>
+      </div>
     </header>
-    <div class="section__All">
-      <section class="section__one">
-        1페이지
+    <div id="section__All">
+      <section id="section__one" class="section">
+        <div class="section__one__main">
+          <div class="section__one__main_text">
+            <p>안녕하십니까?</p>
+            <h3 class="section__one__main_text__h3">저는 열정 넘치는 개발자 이지혜 입니다.</h3>
+            <p>
+              저는 프론트 엔드와 백엔드 모두에 대해 경험을 가지고 있습니다.</br>
+              저는 팀을 이루어서 일 하거나 개인적으로 업무를 진행하는 것에도 자신이 있습니다.</br>
+              할 일이 생기면 날짜를 나눠서 계획을 짜놓습니다.
+              그렇다고 강박관념을 갖고 그 시간에 한다기보단 유연하게 상황에 맞춰서 그 일을 처리합니다.</br>
+              새로운 것을 배우기를 좋아합니다.
+              저는 무엇가를 계속 배우고 원하고 하고 싶어하는 욕심이 있습니다.</br>
+            </p>
+            <div>좌우명 : 중요한 건 나의 결심, 하겠다는 나의 의지</div>
+          </div>
+          <div class="section__one__main_myphoto">
+            <img 
+              src="images/me.jpg" 
+              alt="my profile photo" 
+              class="home__avatar"
+            />
+          </div>
+        </div>
+        <div class="section__pagebutton">
+          <i class="far fa-hand-point-up"></i>
+          <i class="far fa-hand-point-down"></i>
+        </div>
       </section>
-      <section class="section__two">
-        1페이지
+      <section id="section__two" class="section">
+        <div class="section__two__main">
+          <div class="major">
+            <div>
+              <div class="major__icon">
+                <i class="fab fa-html5 fa-major"></i>
+                <div>
+                  HTML, CSS, JAVASCRIPT,<br>
+                  C++, PYTHON, JAVA, SQL(ORACLE)
+                </div>
+              </div>
+              <h2 class="major__title">Laguage</h2>
+            </div>
+            <div class="skill__wrap">
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">100%</span>
+                  <span class="skill__bar level5"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">80%</span>
+                  <span class="skill__bar level4"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">60%</span>
+                  <span class="skill__bar level3"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">100%</span>
+                  <span class="skill__bar level5"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">80%</span>
+                  <span class="skill__bar level4"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">60%</span>
+                  <span class="skill__bar level3"></span>
+                </div>
+            </div>
+          </div>
+          <div class="major">
+            <div>
+              <div class="major__icon">
+                <i class="fab fa-html5 fa-major"></i>
+                <div>
+                  SPRING, MTBATIS, REACT,<br>
+                  JQuery(JSON, XML)  
+                </div>
+              </div>
+              <h2 class="major__title">library/framework</h2>
+            </div>
+            <div class="skill__wrap">
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">100%</span>
+                  <span class="skill__bar level5"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">80%</span>
+                  <span class="skill__bar level4"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">60%</span>
+                  <span class="skill__bar level3"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">100%</span>
+                  <span class="skill__bar level5"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">80%</span>
+                  <span class="skill__bar level4"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">60%</span>
+                  <span class="skill__bar level3"></span>
+                </div>
+            </div>
+          </div>
+          <div class="major">
+            <div>
+              <div class="major__icon">
+                <i class="fab fa-html5 fa-major"></i>
+                <div>
+                  Taod, Eclipse, visual studio,<br>
+                  jupi,tomcat, git, ajax  
+                </div>
+              </div>
+              <h2 class="major__title">IDE 그 외</h2>
+            </div>
+            <div class="skill__wrap">
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">100%</span>
+                  <span class="skill__bar level5"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">80%</span>
+                  <span class="skill__bar level4"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">60%</span>
+                  <span class="skill__bar level3"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">100%</span>
+                  <span class="skill__bar level5"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">80%</span>
+                  <span class="skill__bar level4"></span>
+                </div>
+                <div class="skill__bar__container">
+                  <span class="skill__name">Something</span>
+                  <span class="skill__percent">60%</span>
+                  <span class="skill__bar level3"></span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__pagebutton">
+          <i class="far fa-hand-point-up"></i>
+          <i class="far fa-hand-point-down"></i>
+        </div>
       </section>
-      <section class="section__three">
-        1페이지
+      <section id="section__three" class="section">
+        <div class="section__one__main">
+          3 페이지
+        </div>
+        <div class="section__pagebutton">
+          <i class="far fa-hand-point-up"></i>
+          <i class="far fa-hand-point-down"></i>
+        </div>
       </section>
-      <section class="section__four">
-        1페이지
+      <section id="section__four" class="section">
+        <div class="section__one__main">
+          4 페이지
+        </div>
+        <div class="section__pagebutton">
+          <i class="far fa-hand-point-up"></i>
+          <i class="far fa-hand-point-down"></i>
+        </div>
       </section>
     </div>
   </div>

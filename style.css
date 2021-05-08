@@ -1,17 +1,264 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-black: #474242;
+  --color-green: #80cebe;
+  --color-darkgreen: #c4f2ce;
+  --color-beige: #eff4e7;
+  /* Font size */
+  --font-large: 48px;
+  --font-meedium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+  /* Size */
+  --size-border-radius: 4px;
+  /* Annimation */
+  --animation-duration: 300ms;
+
+  /*skill bar*/
+  --skill1: #ede86570;
+  --skill2: #ede8658a;
+  --skill3: #ede865b0;
+  --skill4: #ede865d3;
+  --skill5: #ede865;
+}
+
 * {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /*중요*/
 }
 
-.section__one {
-  background-color: antiquewhite;
+body {
+  font-family: "Open Sans";
 }
-.section__two {
-  background-color: red;
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
-.section__three {
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+/*----------------------------------------------*/
+
+/* Navar - 상단바 */
+.fa-diaspora {
+  display: inline;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-green);
+  padding: 12px;
+  color: var(--color-white);
+}
+
+.navbar__logo {
+  font-size: var(--font-meedium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.navbar__menu__item {
+  display: block;
+  width: 20%;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-darkgreen);
+}
+/*----------------------------------------------*/
+.section {
+  width: 100%;
+  height: 100%;
+}
+
+/*섹션 버튼*/
+.section__pagebutton {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+}
+.fa-hand-point-up,
+.fa-hand-point-down {
+  margin: 0 auto;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+/*섹션 첫번째 페이지*/
+#section__one {
+  background-color: var(--color-baige);
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+
+.section__one__main {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section__one__main_text {
+  margin-top: 8%;
+  display: grid;
+  grid-template-rows: 6% 10% 40% 10%;
+  font-size: var(--font-regular);
+}
+.section__one__main_text__h3 {
+  font-size: var(--font-meedium);
+}
+
+.home__avatar {
+  margin-top: 40%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/*섹션 두번째 */
+#section__two {
+  background-color: var(--color-baige);
+}
+.section__two__main {
+  width: 100%;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.major {
+  margin-top: 8%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 30% 50%;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.major__icon {
+  width: 40%;
+  height: 80%;
+  margin: 2% auto;
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.fa-major {
+  font-size: var(--font-large);
+}
+.fa-major:hover {
+  color: var(--color-green);
+  transform: rotate(-30deg) scale(1.2);
+}
+
+/*섹션 두번째의 스킬 바*/
+.skill__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill__bar__container {
+  position: relative;
+  width: 70%;
+  height: 7%;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+
+.skill__name {
+  z-index: 1;
+  position: absolute;
+  width: 10%;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skill__percent {
+  z-index: 1;
+  position: absolute;
+  right: 5%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skill__bar {
+  position: absolute;
+  left: 0;
+}
+.level1 {
+  width: 20%;
+  background-color: var(--skill1);
+}
+.level2 {
+  width: 40%;
+  background-color: var(--skill2);
+}
+.level3 {
+  width: 60%;
+  background-color: var(--skill3);
+}
+.level4 {
+  width: 80%;
+  background-color: var(--skill4);
+}
+.level5 {
+  width: 100%;
+  background-color: var(--skill5);
+}
+/*섹션 3*/
+#section__three {
   background-color: yellow;
 }
-.section__four {
+#section__four {
   background-color: greenyellow;
 }
