@@ -4,6 +4,7 @@
   --color-white: #ffffff;
   --color-black: #474242;
   --color-green: #80cebe;
+  --color-midigreen: #9fdebd;
   --color-darkgreen: #c4f2ce;
   --color-beige: #eff4e7;
   /* Font size */
@@ -123,6 +124,7 @@ li {
   width: 30px;
   height: 30px;
   font-size: 30px;
+  color: var(--color-green);
 }
 
 /*섹션 첫번째 페이지*/
@@ -133,22 +135,45 @@ li {
 }
 
 .section__one__main {
-  width: 90%;
+  width: 80%;
   height: 80%;
   margin: 0 auto;
   display: flex;
 }
 
 .section__one__main_text {
-  margin-top: 8%;
+  margin-top: 15%;
+  height: 70%;
   display: grid;
-  grid-template-rows: 6% 10% 40% 10%;
+  grid-template-rows: 60% 30% 10%;
   font-size: var(--font-regular);
+}
+.section__one__main_text__introduce1 {
+  display: grid;
+  grid-template-rows: 10% 20% 60%;
 }
 .section__one__main_text__h3 {
   font-size: var(--font-meedium);
 }
+.section__one__main_text__introduce2 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font-meedium);
+}
 
+.section__one__main_text__introduce2__font {
+  font-size: 70px;
+  display: inline;
+}
+.fa-people-carry {
+  color: rgb(0, 17, 255);
+}
+.fa-edit {
+  color: #ffbb00;
+}
+.fa-fire {
+  color: red;
+}
 .home__avatar {
   margin-top: 40%;
   width: 80%;
@@ -156,7 +181,7 @@ li {
   border-radius: 50%;
 }
 
-/*섹션 두번째 */
+/*섹션 두번째 페이지*/
 #section__two {
   background-color: var(--color-baige);
 }
@@ -183,7 +208,7 @@ li {
   height: 80%;
   margin: 2% auto;
   color: var(--color-black);
-  border: 1px solid var(--color-black);
+  border: 2px solid var(--color-black);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -255,10 +280,124 @@ li {
   width: 100%;
   background-color: var(--skill5);
 }
-/*섹션 3*/
+
+/*섹션 세번째 페이지*/
 #section__three {
-  background-color: yellow;
+  background-color: var(--color-baige);
 }
+.section__three__main {
+  width: 100%;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.section__three__main__project {
+  margin: 8% 2% 0 2%;
+  width: 80%;
+  height: 80%;
+  border: 1px red solid;
+  cursor: pointer;
+  display: grid;
+  grid-template-rows: 10% 60% 30%;
+  text-align: center;
+}
+.section__three__main__project__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*모달창 관련 된 것들*/
+.modal__bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+.modal__wrap {
+  display: grid;
+  width: 40%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 8%;
+  position: relative;
+  background: var(--color-white);
+  z-index: 2;
+  grid-template-rows: 55% 5% 5% 30% 5%;
+  border: var(--color-white) 1px solid;
+  border-radius: 3%;
+}
+.modal__close {
+  margin: 0 auto;
+  text-align: center;
+  width: 20%;
+  height: 80%;
+  background-color: var(--color-green);
+  border: var(--color-white) 1px solid;
+  border-radius: var(--size-border-radius);
+  cursor: pointer;
+}
+.modal__close:hover {
+  background-color: var(--color-darkgreen);
+}
+
+/*섹션 네번째 페이지*/
 #section__four {
-  background-color: greenyellow;
+  background-color: var(--color-baige);
+}
+.section__four__main {
+  width: 40%;
+  height: 72%;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: grid;
+  grid-template-rows: 35% 10% 55%;
+  border-top: 2px var(--color-midigreen) solid;
+  border-radius: 50%;
+}
+/*중간의 라인과 이미지*/
+.section__four__main__thank {
+  font-size: var(--font-large);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.section__four__main__img {
+  width: 100%;
+  margin: 2% 0 2% 0;
+  display: flex;
+  justify-content: center;
+}
+.fa-envelope-open-text {
+  width: 10%;
+  font-size: var(--font-meedium);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section__four__main__img__line {
+  display: inline-block;
+  width: 30%;
+  height: 50%;
+  border-bottom: 2px var(--color-black) solid;
+}
+.fa-envelope-open-text {
+  font-size: var(--font-meedium);
+}
+/*나의 주소들*/
+.section__four__main__myinfo {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.section__four__main__email {
+  width: 100%;
+  height: 14%;
 }
