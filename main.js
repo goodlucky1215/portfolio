@@ -45,11 +45,11 @@ for (let i = 0; i < navbar__menu__item.length; i++) {
 }
 
 /* 모달 창 열기 */
-let main__project__img = document.querySelectorAll(".section__three__main__project__img");
+let main__project = document.querySelectorAll(".section__three__main__project");
 let modal__bg = document.querySelectorAll(".modal__bg");
 let modal__close = document.querySelectorAll(".modal__close");
-for (let i = 0; i < main__project__img.length; i++) {
-  main__project__img[i].addEventListener("click",function () {
+for (let i = 0; i < main__project.length; i++) {
+  main__project[i].addEventListener("click",function () {
     modal__bg[i].style.display="grid";
   });
 }
