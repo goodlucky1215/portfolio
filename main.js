@@ -58,3 +58,10 @@ for (let i = 0; i < modal__close.length; i++) {
     modal__bg[i].style.display="none";
   });
 }
+
+
+/* 비디오 속도 조절 */
+const v = document.querySelectorAll(".my_video");
+v.forEach(function(userItem) {
+  userItem.playbackRate = 3;
+});
