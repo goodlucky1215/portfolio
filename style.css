@@ -8,7 +8,9 @@
   --color-darkgreen: #c4f2ce;
   --color-beige: #eff4e7;
   /* Font size */
+  --font-big: 60px;
   --font-large: 48px;
+  --font-meedium2: 30px;
   --font-meedium: 25px;
   --font-regular: 18px;
   --font-small: 16px;
@@ -99,6 +101,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: var(--font-regular);
 }
 
 .navbar__menu__item:hover {
@@ -124,13 +127,14 @@ li {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  font-size: 30px;
+  font-size: var(--font-meedium2);
   color: var(--color-green);
 }
 
 /*섹션 첫번째 페이지*/
 #section__one {
   background-color: var(--color-baige);
+  height: 100%;
   display: grid;
   grid-template-rows: 90% 10%;
 }
@@ -166,7 +170,7 @@ li {
 }
 
 .section__one__main_text__introduce2__font {
-  font-size: 60px;
+  font-size: var(--font-big);
   display: inline;
 }
 .fa-people-carry {
@@ -178,36 +182,36 @@ li {
 .fa-fire {
   color: red;
 }
-.about__school{
+.about__school {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 .school {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
-.school__img{
+.school__img {
   width: 12%;
   height: 72%;
   padding-right: 2%;
-} 
-.school__description{
+}
+.school__description {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction:column;
-  justify-content: space-between; 
+  flex-direction: column;
+  justify-content: space-between;
 }
 .school__name {
-  font-size: var(--font-small); 
+  font-size: var(--font-small);
 }
- 
-.school__period { 
+
+.school__period {
   font-size: var(--font-micro);
 }
 .home__avatar {
@@ -219,6 +223,9 @@ li {
 
 /*섹션 두번째 페이지*/
 #section__two {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 90% 10%;
   background-color: var(--color-baige);
 }
 .section__two__main {
@@ -319,6 +326,9 @@ li {
 
 /*섹션 세번째 페이지*/
 #section__three {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 90% 10%;
   background-color: var(--color-baige);
 }
 .section__three__main {
@@ -373,7 +383,7 @@ li {
   grid-template-rows: 55% 5% 5% 30% 5%;
   border: var(--color-white) 1px solid;
   border-radius: 3%;
-  font-size: 20px;
+  font-size: var(--font-regular);
   padding: 3px;
 }
 .my_video {
@@ -393,6 +403,9 @@ li {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.modal__wrap__goal__list__href:hover {
+  background-color: #ede865;
+}
 .modal__close {
   margin: 0 auto;
   text-align: center;
@@ -406,12 +419,12 @@ li {
 .modal__close:hover {
   background-color: var(--color-darkgreen);
 }
-.modal__wrap__goal__list__href:hover {
-  background-color: #ede865;
-}
 
 /*섹션 네번째 페이지*/
 #section__four {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 90% 10%;
   background-color: var(--color-baige);
 }
 .section__four__main {
@@ -461,9 +474,100 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: var(--font-meedium);
 }
 .section__four__main__email {
   width: 100%;
   height: 14%;
 }
-/* 
+/* 반응형 만들기 */
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-big: 40px;
+    --font-large: 20px;
+    --font-meedium: 13px;
+    --font-regular: 8px;
+    --font-small: 6px;
+    --font-micro: 4px;
+  }
+  .navbar__logo {
+    margin-top: 2%;
+  }
+  /* 1페이지 */
+  .section__one__main_text {
+    margin-top: 40%;
+  }
+
+  .section__one__main_myphoto {
+    display: none;
+  }
+
+  /* 2페이지 */
+  .section__two__main {
+    margin-top: 20%;
+    height: 80%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+  .fa-major {
+    display: none;
+  }
+  .major {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 100%;
+  }
+  .major__top {
+    display: flex;
+  }
+  .major__icon {
+    width: 100%;
+    height: 90%;
+    margin: 0% auto;
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    grid-template-rows: 100%;
+  }
+  .major__icon__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--font-meedium);
+  }
+  .major__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--font-large);
+  }
+  .skill__wrap {
+    display: none;
+  }
+
+  /* 3페이지 */
+  .section__three__main {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  .section__three__main__project__img {
+    display: none;
+  }
+  .section__three__main__project {
+    margin-top: 3%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+  }
+  /*3페이지의 모달 */
+  .modal__wrap {
+    width: 90%;
+  }
+
+  /*4페이지 */
+  .section__four__main {
+    width: 90%;
+    margin-top: 20%;
+  }
+}
