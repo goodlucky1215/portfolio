@@ -204,7 +204,7 @@ li {
   justify-content: space-between; 
 }
 .school__name {
-  font-size: var(--font-small);
+  font-size: var(--font-small); 
 }
 
 .school__period {
