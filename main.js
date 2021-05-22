@@ -47,11 +47,43 @@ function pageUpDown(updown){
   page+=updown;
   if(page<0) page=0;
   else if(page>=fa_hand_point_up.length-1) page=fa_hand_point_up.length-1;
-
+  if(page==1) skillevent();
+  else skilleventdown();
   window.scrollTo({
     top: window.innerHeight*page,
     behavior: "smooth"
   });
+}
+
+/* 스킬 애니메이션 효과 */
+let skill__bar = document.querySelectorAll(".skill__bar");
+let level1 = document.querySelectorAll(".level1");
+let level2 = document.querySelectorAll(".level2");
+let level3 = document.querySelectorAll(".level3");
+let level4 = document.querySelectorAll(".level4");
+let level5 = document.querySelectorAll(".level5");
+function skillevent(){
+  level1.forEach((lev)=>{
+    lev.style.width = "20%";
+  })
+  level2.forEach((lev)=>{
+    lev.style.width = "40%";
+  })
+  level3.forEach((lev)=>{
+    lev.style.width = "60%";
+  })
+  level4.forEach((lev)=>{
+    lev.style.width = "80%";
+  })
+  level5.forEach((lev)=>{
+    lev.style.width = "100%";
+  })
+}
+function skilleventdown(){
+  skill__bar.forEach((lev)=>{
+    lev.style.width = "0%";
+  })
+
 }
 
 const navbar__menu__item = document.querySelectorAll('.navbar__menu__item');
