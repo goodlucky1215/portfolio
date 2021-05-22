@@ -36,8 +36,6 @@
 * {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   box-sizing: border-box; /*중요*/
 }
 
@@ -69,16 +67,23 @@ li {
 .fa-diaspora {
   display: inline;
 }
-
-.navbar {
+header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 70px;
+  height: 80px;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
   background-color: var(--color-green);
-  padding: 12px;
+}
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
   color: var(--color-white);
 }
 
@@ -89,19 +94,18 @@ li {
 
 .navbar__menu {
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: space-between;
 }
 
 .navbar__menu__item {
   display: block;
-  width: 20%;
   cursor: pointer;
   border-radius: var(--size-border-radius);
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: var(--font-regular);
+  padding: 3%;
 }
 
 .navbar__menu__item:hover {
@@ -110,7 +114,10 @@ li {
 /*----------------------------------------------*/
 .section {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-color: var(--color-baige);
+  display: grid;
+  grid-template-rows: 90% 10%;
 }
 
 /*섹션 버튼*/
@@ -132,13 +139,6 @@ li {
 }
 
 /*섹션 첫번째 페이지*/
-#section__one {
-  background-color: var(--color-baige);
-  height: 100%;
-  display: grid;
-  grid-template-rows: 90% 10%;
-}
-
 .section__one__main {
   width: 80%;
   height: 80%;
@@ -161,8 +161,9 @@ li {
   font-size: var(--font-meedium);
 }
 .section__one__main_text__introduce2 {
+  width: 70%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-size: var(--font-meedium);
 }
 .section__one__main_text__introduce3 {
@@ -202,7 +203,7 @@ li {
 }
 .school__description {
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -222,23 +223,18 @@ li {
 }
 
 /*섹션 두번째 페이지*/
-#section__two {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 90% 10%;
-  background-color: var(--color-baige);
-}
 .section__two__main {
   width: 100%;
-  height: 90%;
+  height: 100%;
+  padding-top: 8%;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .major {
-  margin-top: 8%;
   text-align: center;
   display: grid;
-  grid-template-rows: 30% 50%;
+  grid-template-rows: 40% 60%;
 }
 
 .about__majors {
@@ -249,12 +245,13 @@ li {
 .major__icon {
   width: 40%;
   height: 80%;
-  margin: 2% auto;
+  margin: 0 auto;
   color: var(--color-black);
   border: 2px solid var(--color-black);
   border-radius: 50%;
   display: grid;
   grid-template-rows: 30% 70%;
+  font-size: var(--font-regular);
 }
 .fa-major {
   font-size: var(--font-large);
@@ -274,7 +271,7 @@ li {
 
 .skill__bar__container {
   position: relative;
-  width: 70%;
+  width: 60%;
   height: 7%;
   border-radius: 4px;
   background-color: whitesmoke;
@@ -285,7 +282,7 @@ li {
   z-index: 1;
   position: absolute;
   width: 10%;
-  left: 1%;
+  padding: 1% 0 0 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,7 +290,8 @@ li {
 .skill__percent {
   z-index: 1;
   position: absolute;
-  right: 5%;
+  right: 4%;
+  padding-top: 1%;
   width: 10%;
   display: flex;
   flex-direction: column;
@@ -301,6 +299,7 @@ li {
 }
 .skill__bar {
   position: absolute;
+  height: 100%;
   left: 0;
 }
 .level1 {
@@ -326,23 +325,34 @@ li {
 
 /*섹션 세번째 페이지*/
 #section__three {
-  height: 100%;
+  position: relative;
+}
+.section__three__top {
+  padding-top: 7%;
+  width: 100%;
+  height: 95%;
   display: grid;
-  grid-template-rows: 90% 10%;
-  background-color: var(--color-baige);
+  grid-template-rows: 5% 95%;
+}
+.section__three__top__text {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  color: red;
+  font-weight: bolder;
 }
 .section__three__main {
-  width: 100%;
-  height: 90%;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 25% 25% 25% 25%;
+  font-size: var(--font-regular);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .section__three__main__project {
-  margin: 8% 2% 0 2%;
-  width: 80%;
-  height: 80%;
+  width: 23%;
+  height: 100%;
   border: 3px var(--color-green) solid;
   border-radius: 5px;
   cursor: pointer;
@@ -359,24 +369,28 @@ li {
   flex-direction: column;
   justify-content: center;
 }
+.section__three__main__project__img {
+  width: 100%;
+  height: 100%;
+}
 
 /*모달창 관련 된 것들*/
 .modal__bg {
   display: none;
+  top: 0px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 0;
   left: 0;
   position: absolute;
   z-index: 1;
+  align-items: center;
 }
 .modal__wrap {
   display: grid;
   width: 40%;
   height: 80%;
   margin: 0 auto;
-  margin-top: 8%;
   position: relative;
   background: var(--color-white);
   z-index: 2;
@@ -421,12 +435,6 @@ li {
 }
 
 /*섹션 네번째 페이지*/
-#section__four {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 90% 10%;
-  background-color: var(--color-baige);
-}
 .section__four__main {
   width: 40%;
   height: 72%;
@@ -481,22 +489,26 @@ li {
   height: 14%;
 }
 /* 반응형 만들기 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
   :root {
     /* Font size */
-    --font-big: 40px;
-    --font-large: 20px;
+    --font-big: 30px;
+    --font-large: 25px;
     --font-meedium: 13px;
     --font-regular: 8px;
     --font-small: 6px;
     --font-micro: 4px;
   }
-  .navbar__logo {
-    margin-top: 2%;
+  .section__one__main_text__introduce2__font {
+    display: inline;
+  }
+  .navbar {
+    grid-template-columns: 50% 50%;
   }
   /* 1페이지 */
   .section__one__main_text {
-    margin-top: 40%;
+    padding-top: 30%;
+    grid-template-rows: 50% 20% 20% 10%;
   }
 
   .section__one__main_myphoto {
@@ -505,61 +517,118 @@ li {
 
   /* 2페이지 */
   .section__two__main {
-    margin-top: 20%;
-    height: 80%;
-    margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-  }
-  .fa-major {
-    display: none;
+    padding-top: 30%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: none;
   }
   .major {
-    text-align: center;
-    display: grid;
-    grid-template-rows: 100%;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: none;
   }
   .major__top {
-    display: flex;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .major__icon {
-    width: 100%;
+    width: 90%;
     height: 90%;
-    margin: 0% auto;
-    color: var(--color-black);
-    border: 2px solid var(--color-black);
-    grid-template-rows: 100%;
-  }
-  .major__icon__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: var(--font-meedium);
   }
   .major__title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: var(--font-large);
   }
   .skill__wrap {
     display: none;
   }
 
   /* 3페이지 */
+  .section__three__top {
+    padding-top: 20%;
+  }
   .section__three__main {
-    margin-top: 10%;
     display: flex;
     flex-direction: column;
+    font-size: var(--font-regular);
   }
   .section__three__main__project__img {
     display: none;
   }
   .section__three__main__project {
-    margin-top: 3%;
+    width: 90%;
+    height: 20%;
     display: grid;
     grid-template-rows: 20% 80%;
   }
+  /*3페이지의 모달 */
+  .modal__wrap {
+    width: 90%;
+  }
+
+  /*4페이지 */
+  .section__four__main {
+    width: 90%;
+    margin-top: 40%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 765px) {
+  .section__one__main_text__introduce2__font {
+    display: inline;
+  }
+  .navbar {
+    grid-template-columns: 50% 50%;
+  }
+  /* 1페이지 */
+  .section__one__main_text {
+    padding-top: 5%;
+    grid-template-rows: 55% 15% 20% 10%;
+  }
+  .section__one__main {
+    width: 90%;
+  }
+  .section__one__main_myphoto {
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  .home__avatar {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+  }
+  /* 2페이지 */
+  .section__two__main {
+    padding-top: 20%;
+  }
+  .major {
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 35% 65%;
+  }
+  .major__icon {
+    width: 90%;
+    height: 90%;
+  }
+  .skill__bar__container {
+    width: 90%;
+    height: 5%;
+  }
+  .skill__percent {
+    right: 10%;
+  }
+  /* 3페이지 */
+  .section__three__top {
+    padding-top: 15%;
+  }
+  .section__three__main {
+    width: 95%;
+    height: 100%;
+  }
+
   /*3페이지의 모달 */
   .modal__wrap {
     width: 90%;

@@ -15,18 +15,20 @@
 </head>
 <body>
   <div class="main">
-    <header class="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">Jihye</a>
-      </div>
-      <div class="nav__menu">
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">My Work</li>
-          <li class="navbar__menu__item">About</li>
-        </ul>
+    <header>
+      <div class="navbar">
+        <div class="navbar__logo">
+          <i class="fab fa-diaspora"></i>
+          <a href="#">Jihye</a>
+        </div>
+        <div class="nav__menu">
+          <ul class="navbar__menu">
+            <li class="navbar__menu__item">Home</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">My Work</li>
+            <li class="navbar__menu__item">About</li>
+          </ul>
+        </div>
       </div>
     </header>
     <div id="section__All">
@@ -172,7 +174,7 @@
                   Tomcat, Git/GitHub  
                 </div>
               </div>
-              <h2 class="major__title">툴 그 외</h2>
+              <h2 class="major__title">Tool 그 외</h2>
             </div>
             <div class="skill__wrap">
                 <div class="skill__bar__container">
@@ -214,134 +216,137 @@
         </div>
       </section>
       <section id="section__three" class="section">
-        <div class="section__three__main">
-          <div class="section__three__main__project project__one">
-            <p class="section__three__main__project__text">[프로젝트명] Gshop클론코딩</p>
-            <img 
-            src="images/pro1.png" 
-            class="section__three__main__project__img"
-            />
-            <p class="section__three__main__project__text">
-              [개발환경 및 언어] <br>
-              사용 언어: html, css(+sass), javascript <br>
-               개발툴:tool Visual Studio 
-            </p>
-          </div>
-          <div class="section__three__main__project project__two">
-            <p class="section__three__main__project__text">[프로젝트명] 채팅방 만들기</p>
-            <img 
-            src="images/pro2.png" 
-            class="section__three__main__project__img"
-            />
-            <p class="section__three__main__project__text">
-              [개발환경 및 언어] <br>
-              사용 언어: Java, Oracle <br>
-              개발툴: Eclipse, Toad <br>
-              프레임워크/그 외: Mybatis/Git
-            </p>
-          </div>
-          <div class="section__three__main__project project__three">
-            <p class="section__three__main__project__text">[프로젝트명] SNS만들기</p>
-            <img 
-            src="images/pro3.PNG" 
-            class="section__three__main__project__img"
-            />
-            <p class="section__three__main__project__text">
-              [개발환경 및 언어] <br>
-              사용 언어: Jsp(+html),css, javascript <br>
-                         Java(servlet), Oracle <br>
-              개발툴: Eclipse, Toad
-            </p>
-          </div>
-          <div class="section__three__main__project project__four">
-            <p class="section__three__main__project__text">[프로젝트명] 파이널 프로젝트</p>
-            <img 
-            src="images/chick.png" 
-            class="section__three__main__project__img"
-            />
-            <p class="section__three__main__project__text">
-              [개발환경 및 언어] <br>
-              사용 언어: html, css(+sass), javascript <br>
-              개발툴:tool Visual Studio
-            </p>
-          </div>
-          <div class="modal__bg">
-            <div class="modal__wrap">
-              <video muted autoplay loop class="my_video">
-                <source src="images/video1.mp4" type="video/mp4">
-              </video>
-              <div>[프로젝트 기간] 2020.07.14~2020.07.23</div>
-              <div>[개발 인원] 개인 프로젝트</div>
-              <div class="modal__wrap__goal">
-                <div>[목표]</div>
-                <ul class="modal__wrap__goal__list">
-                  <li>sass 사용해보기</li>
-                  <li>html에서 틀 미리 생각해서 사용하기</li>
-                  <li>바닐라 자바스크립트 사용해보기</li>
-                  <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/gsshop_copy_make">🔑 git소스보기</a></li>
-                  <li><a class="modal__wrap__goal__list__href" href="https://gsshopcopy.netlify.app/">🔑 웹 페이지</a></li>
-                </ul>
-              </div>
-              <div class="modal__close">close</div>
+        <div class="section__three__top">
+          <div class="section__three__top__text"><MARQUEE>프로젝트를 클릭해주세요</MARQUEE></div>
+          <div class="section__three__main">
+            <div class="section__three__main__project project__one">
+              <p class="section__three__main__project__text">[프로젝트명] Gshop클론코딩</p>
+              <img 
+              src="images/pro1.png" 
+              class="section__three__main__project__img"
+              />
+              <p class="section__three__main__project__text">
+                [개발환경 및 언어] <br>
+                사용 언어: html, css(+sass), javascript <br>
+                개발툴:tool Visual Studio 
+              </p>
             </div>
-          </div>
-          <div class="modal__bg">
-            <div class="modal__wrap">
-              <video muted autoplay loop class="my_video">
-                <source src="images/video2.mp4" type="video/mp4">
-              </video>
-              <div>[프로젝트 기간] 2021.03.22~2021.04.30</div>
-              <div>[개발 인원] 3명</div>
-              <div class="modal__wrap__goal">
-                <div>[목표]</div>
-                <div class="modal__wrap__goal__list">
-                  <div>설계해보기(useCase명세서,클래스 다이어그램, 플로우 차트, erd,UI)</div>
-                  <div>서버 구현하기(쓰래드의 이동과 동기화에 대한 공부)</div>
-                  <div>마이바티스 사용하기(procedure까지 구현)</div>
-                  <div>협업으로 Git 사용하기</div>
-                  <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/project_talktalk2">🔑 git소스보기</a></li>
-                </div>
-              </div>
-              <div class="modal__close">close</div>
+            <div class="section__three__main__project project__two">
+              <p class="section__three__main__project__text">[프로젝트명] 채팅방 만들기</p>
+              <img 
+              src="images/pro2.png" 
+              class="section__three__main__project__img"
+              />
+              <p class="section__three__main__project__text">
+                [개발환경 및 언어] <br>
+                사용 언어: Java, Oracle <br>
+                개발툴: Eclipse, Toad <br>
+                프레임워크/그 외: Mybatis/Git
+              </p>
             </div>
-          </div>
-          <div class="modal__bg">
-            <div class="modal__wrap">
-              <video muted autoplay loop class="my_video">
-                <source src="images/video3.mp4" type="video/mp4">
-              </video>
-              <div>[프로젝트 기간] 2021.05.05~2021.05.17</div>
-              <div>[개발 인원] 개인 프로젝트</div>
-              <div class="modal__wrap__goal">
-                <div>[목표]</div>
-                <div class="modal__wrap__goal__list">
-                  <div>jsp와 servlet의 돌아가는 과정을 이해, web.xml 사용법 + 세션 맛보기</div>
-                  <div>ajax 사용해보기</div>
-                  <div>오라클에서 데이터를 받아와서 json형태로 변환 후, 사용해보기</div>
-                  <div>이미지(cos.jar 사용)랑 글 올리기</div>
-                  <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/Instagram_servlet-jsp">🔑 git소스보기</a></li>
-                </div>
-              </div>
-              <div class="modal__close">close</div>
+            <div class="section__three__main__project project__three">
+              <p class="section__three__main__project__text">[프로젝트명] SNS만들기</p>
+              <img 
+              src="images/pro3.PNG" 
+              class="section__three__main__project__img"
+              />
+              <p class="section__three__main__project__text">
+                [개발환경 및 언어] <br>
+                사용 언어: Jsp(+html),css, javascript <br>
+                          Java(servlet), Oracle <br>
+                개발툴: Eclipse, Toad
+              </p>
             </div>
-          </div>
-          <div class="modal__bg">
-            <div class="modal__wrap">
-              <video muted autoplay loop class="my_video">
-                <source src="images/video2.avi" type="video/avi">
-              </video>
-              <div>[프로젝트 기간] 2021.03.22~2021.04.30</div>
-              <div>[개발 인원] 3명</div>
-              <div class="modal__wrap__goal">
-                <div>[목표]</div>
-                <div class="modal__wrap__goal__list">
-                  <div>설계해보기(useCase명세서,클래스 다이어그램, 플로우 차트, erd,UI)</div>
-                  <div>서버 구현하기(쓰래드의 이동과 동기화에 대한 공부)</div>
-                  <div>마이바티스 사용하기(procedure까지 구현)</div>
-                  <div>협업으로 Git 사용하기</div>
+            <div class="section__three__main__project project__four">
+              <p class="section__three__main__project__text">[프로젝트명] 파이널 프로젝트</p>
+              <img 
+              src="images/chick.png" 
+              class="section__three__main__project__img"
+              />
+              <p class="section__three__main__project__text">
+                [개발환경 및 언어] <br>
+                사용 언어: html, css(+sass), javascript <br>
+                개발툴:tool Visual Studio
+              </p>
+            </div>
+            <div class="modal__bg">
+              <div class="modal__wrap">
+                <video muted autoplay loop class="my_video">
+                  <source src="images/video1.mp4" type="video/mp4">
+                </video>
+                <div>[프로젝트 기간] 2020.07.14~2020.07.23</div>
+                <div>[개발 인원] 개인 프로젝트</div>
+                <div class="modal__wrap__goal">
+                  <div>[목표]</div>
+                  <ul class="modal__wrap__goal__list">
+                    <li>sass 사용해보기</li>
+                    <li>html에서 틀 미리 생각해서 사용하기</li>
+                    <li>바닐라 자바스크립트 사용해보기</li>
+                    <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/gsshop_copy_make">🔑 git소스보기</a></li>
+                    <li><a class="modal__wrap__goal__list__href" href="https://gsshopcopy.netlify.app/">🔑 웹 페이지</a></li>
+                  </ul>
                 </div>
+                <div class="modal__close">close</div>
               </div>
-              <div class="modal__close">close</div>
+            </div>
+            <div class="modal__bg">
+              <div class="modal__wrap">
+                <video muted autoplay loop class="my_video">
+                  <source src="images/video2.mp4" type="video/mp4">
+                </video>
+                <div>[프로젝트 기간] 2021.03.22~2021.04.30</div>
+                <div>[개발 인원] 3명</div>
+                <div class="modal__wrap__goal">
+                  <div>[목표]</div>
+                  <div class="modal__wrap__goal__list">
+                    <div>설계해보기(useCase명세서,클래스 다이어그램, 플로우 차트, erd,UI)</div>
+                    <div>서버 구현하기(쓰래드의 이동과 동기화에 대한 공부)</div>
+                    <div>마이바티스 사용하기(procedure까지 구현)</div>
+                    <div>협업으로 Git 사용하기</div>
+                    <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/project_talktalk2">🔑 git소스보기</a></li>
+                  </div>
+                </div>
+                <div class="modal__close">close</div>
+              </div>
+            </div>
+            <div class="modal__bg">
+              <div class="modal__wrap">
+                <video muted autoplay loop class="my_video">
+                  <source src="images/video3.mp4" type="video/mp4">
+                </video>
+                <div>[프로젝트 기간] 2021.05.05~2021.05.17</div>
+                <div>[개발 인원] 개인 프로젝트</div>
+                <div class="modal__wrap__goal">
+                  <div>[목표]</div>
+                  <div class="modal__wrap__goal__list">
+                    <div>jsp와 servlet의 돌아가는 과정을 이해, web.xml 사용법 + 세션 맛보기</div>
+                    <div>ajax 사용해보기</div>
+                    <div>오라클에서 데이터를 받아와서 json형태로 변환 후, 사용해보기</div>
+                    <div>이미지(cos.jar 사용)랑 글 올리기</div>
+                    <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/Instagram_servlet-jsp">🔑 git소스보기</a></li>
+                  </div>
+                </div>
+                <div class="modal__close">close</div>
+              </div>
+            </div>
+            <div class="modal__bg">
+              <div class="modal__wrap">
+                <video muted autoplay loop class="my_video">
+                  <source src="images/video2.avi" type="video/avi">
+                </video>
+                <div>[프로젝트 기간] 2021.03.22~2021.04.30</div>
+                <div>[개발 인원] 3명</div>
+                <div class="modal__wrap__goal">
+                  <div>[목표]</div>
+                  <div class="modal__wrap__goal__list">
+                    <div>설계해보기(useCase명세서,클래스 다이어그램, 플로우 차트, erd,UI)</div>
+                    <div>서버 구현하기(쓰래드의 이동과 동기화에 대한 공부)</div>
+                    <div>마이바티스 사용하기(procedure까지 구현)</div>
+                    <div>협업으로 Git 사용하기</div>
+                  </div>
+                </div>
+                <div class="modal__close">close</div>
+              </div>
             </div>
           </div>
         </div>
