@@ -9,7 +9,7 @@
   --color-beige: #eff4e7;
   /* Font size */
   --font-large: 48px;
-  --font-meedium: 28px;
+  --font-meedium: 25px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -143,10 +143,10 @@ li {
 }
 
 .section__one__main_text {
-  margin-top: 15%;
-  height: 70%;
+  margin-top: 10%;
+  height: 90%;
   display: grid;
-  grid-template-rows: 60% 30% 10%;
+  grid-template-rows: 45% 20% 25% 10%;
   font-size: var(--font-regular);
 }
 .section__one__main_text__introduce1 {
@@ -161,9 +161,12 @@ li {
   justify-content: flex-start;
   font-size: var(--font-meedium);
 }
+.section__one__main_text__introduce3 {
+  padding-top: 5%;
+}
 
 .section__one__main_text__introduce2__font {
-  font-size: 70px;
+  font-size: 60px;
   display: inline;
 }
 .fa-people-carry {
@@ -174,6 +177,38 @@ li {
 }
 .fa-fire {
   color: red;
+}
+.about__school{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+}
+.school {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.school__img{
+  width: 12%;
+  height: 72%;
+  padding-right: 2%;
+} 
+.school__description{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between; 
+}
+.school__name {
+  font-size: var(--font-small);
+}
+
+.school__period {
+  font-size: var(--font-micro);
 }
 .home__avatar {
   margin-top: 40%;
@@ -431,3 +466,4 @@ li {
   width: 100%;
   height: 14%;
 }
+/* 
