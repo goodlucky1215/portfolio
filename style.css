@@ -207,7 +207,7 @@ li {
   font-size: var(--font-small); 
 }
 
-.school__period {
+.school__period { 
   font-size: var(--font-micro);
 }
 .home__avatar {
