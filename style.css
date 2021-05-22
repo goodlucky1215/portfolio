@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: black;
 }
 
 ul {
@@ -60,6 +60,7 @@ ul {
 li {
   list-style: none;
 }
+
 /*----------------------------------------------*/
 
 /* Navar - 상단바 */
@@ -68,7 +69,7 @@ li {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
   height: 70px;
@@ -210,8 +211,8 @@ li {
   color: var(--color-black);
   border: 2px solid var(--color-black);
   border-radius: 50%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 30% 70%;
 }
 .fa-major {
   font-size: var(--font-large);
@@ -289,17 +290,24 @@ li {
   width: 100%;
   height: 90%;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 .section__three__main__project {
   margin: 8% 2% 0 2%;
   width: 80%;
   height: 80%;
-  border: 1px red solid;
+  border: 3px var(--color-green) solid;
+  border-radius: 5px;
   cursor: pointer;
   display: grid;
   grid-template-rows: 10% 60% 30%;
   text-align: center;
+}
+.section__three__main__project:hover {
+  z-index: 1;
+  background-color: var(--color-darkgreen);
 }
 .section__three__main__project__text {
   display: flex;
@@ -362,6 +370,9 @@ li {
 }
 .modal__close:hover {
   background-color: var(--color-darkgreen);
+}
+.modal__wrap__goal__list__href:hover {
+  background-color: #ede865;
 }
 
 /*섹션 네번째 페이지*/

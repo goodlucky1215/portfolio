@@ -14,7 +14,24 @@ window.onload = function() {
   pageup();
 }
 
-window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
+let mouseWheel = true;
+document.addEventListener("mousewheel", function (e) {
+  if (!mouseWheel) {
+    return false;
+  }
+  setTimeout(()=> {
+    mouseWheel = true;
+  }, 1000); 
+  mouseWheel = false;
+  let delta = e.wheelDelta;
+  if (delta < 0) {
+    console.log(delta);
+    pageUpDown(+1);
+  } else {
+    //e.wheelDelta가 +이면
+    pageUpDown(-1);
+  }
+});
 
 function pageup(){
   fa_hand_point_up.forEach((point_up)=>{
@@ -30,9 +47,11 @@ function pageUpDown(updown){
   page+=updown;
   if(page<0) page=0;
   else if(page>=fa_hand_point_up.length-1) page=fa_hand_point_up.length-1;
-  let innerheight = window.innerHeight*page;
-  section__All.style.transform = `translateY(${-innerheight}px)`;
-  section__All.style.transition = `all 600ms`;
+
+  window.scrollTo({
+    top: window.innerHeight*page,
+    behavior: "smooth"
+  });
 }
 
 const navbar__menu__item = document.querySelectorAll('.navbar__menu__item');
