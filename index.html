@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hi+Melody&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hi+Melody&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
   <script type="text/typescript" defer src="main.js"></script>
   <title>Jihye's Portfolio</title>
 </head>
+
 <body>
   <div class="main">
     <header>
@@ -71,11 +75,7 @@
             <div class="section__one__main_text__introduce3">좌우명 : 중요한 건 나의 결심, 하겠다는 나의 의지</div>
           </div>
           <div class="section__one__main_myphoto">
-            <img 
-              src="images/me.jpg" 
-              alt="my profile photo" 
-              class="home__avatar"
-            />
+            <img src="images/me.jpg" alt="my profile photo" class="home__avatar" />
           </div>
         </div>
         <div class="section__pagebutton">
@@ -84,19 +84,13 @@
         </div>
       </section>
       <section id="section__two" class="section">
-        <div class="section__two__main">
-          <div class="major">
-            <div class="major__top">
-              <div class="major__icon">
-                <i class="fab fa-html5 fa-major"></i>
-                <div class="major__icon__text">
-                  Html, CSS, Javascript,<br>
-                  React Library
-                </div>
-              </div>
-              <h2 class="major__title">Front-End</h2>
-            </div>
-            <div class="skill__wrap">
+        <div class="section__two__main__big">
+          <div class="skill_img">
+            <img src="images/skill.PNG" />
+          </div>
+          <div class="skill__bar__Frame">
+            <div class="skill__bar__Frame__div">
+              <div class="skill__wrap">
                 <div class="skill__bar__container">
                   <span class="skill__name">Html</span>
                   <span class="skill__percent">80%</span>
@@ -117,22 +111,8 @@
                   <span class="skill__percent">40%</span>
                   <span class="skill__bar level2"></span>
                 </div>
-            </div>
-          </div>
-          <div class="major">
-            <div  class="major__top">
-              <div class="major__icon">
-                <i class="fas fa-server fa-major"></i>
-                <div class="major__icon__text">
-                  C++, Python, Java,<br>
-                  Spring Framework, <br>
-                  RESTful API, Sql(Oracle),<br>
-                  Mybatis Framework<br>
-                </div>
               </div>
-              <h2 class="major__title">Back-End</h2>
-            </div>
-            <div class="skill__wrap">
+              <div class="skill__wrap">
                 <div class="skill__bar__container">
                   <span class="skill__name">C++</span>
                   <span class="skill__percent">60%</span>
@@ -163,20 +143,8 @@
                   <span class="skill__percent">60%</span>
                   <span class="skill__bar level3"></span>
                 </div>
-            </div>
-          </div>
-          <div class="major">
-            <div  class="major__top">
-              <div class="major__icon">
-                <i class="fas fa-tools fa-major"></i>
-                <div class="major__icon__text">
-                  Toad, Eclipse, Visual Studio,<br>
-                  Tomcat, Git/GitHub  
-                </div>
               </div>
-              <h2 class="major__title">Tool 그 외</h2>
-            </div>
-            <div class="skill__wrap">
+              <div class="skill__wrap">
                 <div class="skill__bar__container">
                   <span class="skill__name__info">경지</span>
                   <span class="skill__percent">100%</span>
@@ -207,6 +175,47 @@
                   <span class="skill__percent">0%</span>
                   <span class="skill__bar level0"></span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__two__main">
+          <div class="major">
+            <div class="major__top">
+              <div class="major__icon">
+                <i class="fab fa-html5 fa-major"></i>
+                <div class="major__icon__text">
+                  Html, CSS, Javascript,<br>
+                  React Library
+                </div>
+              </div>
+              <h2 class="major__title">Front-End</h2>
+            </div>
+          </div>
+          <div class="major">
+            <div class="major__top">
+              <div class="major__icon">
+                <i class="fas fa-server fa-major"></i>
+                <div class="major__icon__text">
+                  C++, Python, Java,<br>
+                  Spring Framework, <br>
+                  RESTful API, Sql(Oracle),<br>
+                  Mybatis Framework<br>
+                </div>
+              </div>
+              <h2 class="major__title">Back-End</h2>
+            </div>
+          </div>
+          <div class="major">
+            <div class="major__top">
+              <div class="major__icon">
+                <i class="fas fa-tools fa-major"></i>
+                <div class="major__icon__text">
+                  Toad, Eclipse, Visual Studio,<br>
+                  Tomcat, Git/GitHub
+                </div>
+              </div>
+              <h2 class="major__title">Tool 그 외</h2>
             </div>
           </div>
         </div>
@@ -217,26 +226,22 @@
       </section>
       <section id="section__three" class="section">
         <div class="section__three__top">
-          <div class="section__three__top__text"><MARQUEE>프로젝트를 클릭해주세요</MARQUEE></div>
+          <div class="section__three__top__text">
+            <MARQUEE>프로젝트를 클릭해주세요</MARQUEE>
+          </div>
           <div class="section__three__main">
             <div class="section__three__main__project project__one">
               <p class="section__three__main__project__text">[프로젝트명] Gshop클론코딩</p>
-              <img 
-              src="images/pro1.png" 
-              class="section__three__main__project__img"
-              />
+              <img src="images/pro1.png" class="section__three__main__project__img" />
               <p class="section__three__main__project__text">
                 [개발환경 및 언어] <br>
                 사용 언어: html, css(+sass), javascript <br>
-                개발툴:tool Visual Studio 
+                개발툴:tool Visual Studio
               </p>
             </div>
             <div class="section__three__main__project project__two">
               <p class="section__three__main__project__text">[프로젝트명] 채팅방 만들기</p>
-              <img 
-              src="images/pro2.png" 
-              class="section__three__main__project__img"
-              />
+              <img src="images/pro2.png" class="section__three__main__project__img" />
               <p class="section__three__main__project__text">
                 [개발환경 및 언어] <br>
                 사용 언어: Java, Oracle <br>
@@ -246,23 +251,17 @@
             </div>
             <div class="section__three__main__project project__three">
               <p class="section__three__main__project__text">[프로젝트명] SNS만들기</p>
-              <img 
-              src="images/pro3.PNG" 
-              class="section__three__main__project__img"
-              />
+              <img src="images/pro3.PNG" class="section__three__main__project__img" />
               <p class="section__three__main__project__text">
                 [개발환경 및 언어] <br>
                 사용 언어: Jsp(+html),css, javascript <br>
-                          Java(servlet), Oracle <br>
+                Java(servlet), Oracle <br>
                 개발툴: Eclipse, Toad
               </p>
             </div>
             <div class="section__three__main__project project__four">
               <p class="section__three__main__project__text">[프로젝트명] 파이널 프로젝트</p>
-              <img 
-              src="images/chick.png" 
-              class="section__three__main__project__img"
-              />
+              <img src="images/chick.png" class="section__three__main__project__img" />
               <p class="section__three__main__project__text">
                 [개발환경 및 언어] <br>
                 사용 언어: html, css(+sass), javascript <br>
@@ -282,8 +281,10 @@
                     <li>sass 사용해보기</li>
                     <li>html에서 틀 미리 생각해서 사용하기</li>
                     <li>바닐라 자바스크립트 다양하게 사용해보기</li>
-                    <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/gsshop_copy_make">🔑 git소스보기</a></li>
-                    <li><a class="modal__wrap__goal__list__href" href="https://gsshopcopy.netlify.app/">🔑 웹 페이지</a></li>
+                    <li><a class="modal__wrap__goal__list__href"
+                        href="https://github.com/goodlucky1215/gsshop_copy_make">🔑 git소스보기</a></li>
+                    <li><a class="modal__wrap__goal__list__href" href="https://gsshopcopy.netlify.app/">🔑 웹 페이지</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="modal__close">close</div>
@@ -303,7 +304,8 @@
                     <div>서버 구현하기(쓰래드의 이동과 동기화에 대한 공부)</div>
                     <div>마이바티스 사용하기(procedure까지 구현)</div>
                     <div>협업으로 Git 사용하기</div>
-                    <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/project_talktalk2">🔑 git소스보기</a></li>
+                    <li><a class="modal__wrap__goal__list__href"
+                        href="https://github.com/goodlucky1215/project_talktalk2">🔑 git소스보기</a></li>
                   </div>
                 </div>
                 <div class="modal__close">close</div>
@@ -323,7 +325,8 @@
                     <div>ajax 사용해보기</div>
                     <div>오라클에서 데이터를 받아와서 json형태로 변환 후, 사용해보기</div>
                     <div>이미지(cos.jar 사용)랑 글 올리기</div>
-                    <li><a class="modal__wrap__goal__list__href" href="https://github.com/goodlucky1215/Instagram_servlet-jsp">🔑 git소스보기</a></li>
+                    <li><a class="modal__wrap__goal__list__href"
+                        href="https://github.com/goodlucky1215/Instagram_servlet-jsp">🔑 git소스보기</a></li>
                   </div>
                 </div>
                 <div class="modal__close">close</div>
@@ -357,17 +360,18 @@
       </section>
       <section id="section__four" class="section">
         <div class="section__four__main">
-            <p class="section__four__main__thank" >Thank you!</p>
-            <div class="section__four__main__img" >
-              <p class="section__four__main__img__line"></p>
-              <i class="fas fa-envelope-open-text"></i>
-              <p class="section__four__main__img__line"></p>
-           </div>
-           <div class="section__four__main__myinfo">
-             <li class="section__four__main__email">[E-mail] goodlucky1215@naver.com</li>
-             <li class="section__four__main__email"><a href="https://github.com/goodlucky1215">[Github]</a></li>
-             <li class="section__four__main__email"><a href="https://www.notion.so/bcafc4c3ce5b41b588508fd77d8f05f1">[Notion]</a></li>
-            </div>
+          <p class="section__four__main__thank">Thank you!</p>
+          <div class="section__four__main__img">
+            <p class="section__four__main__img__line"></p>
+            <i class="fas fa-envelope-open-text"></i>
+            <p class="section__four__main__img__line"></p>
+          </div>
+          <div class="section__four__main__myinfo">
+            <li class="section__four__main__email">[E-mail] goodlucky1215@naver.com</li>
+            <li class="section__four__main__email"><a href="https://github.com/goodlucky1215">[Github]</a></li>
+            <li class="section__four__main__email"><a
+                href="https://www.notion.so/bcafc4c3ce5b41b588508fd77d8f05f1">[Notion]</a></li>
+          </div>
         </div>
         <div class="section__pagebutton">
           <i class="far fa-hand-point-up"></i>
@@ -377,4 +381,5 @@
     </div>
   </div>
 </body>
+
 </html>
